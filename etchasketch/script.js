@@ -6,12 +6,12 @@ let pixel = document.getElementsByClassName('item')
 /* ******* Fuction that create the grid according to input ******* */
 function createGrid(){
     let container = document.getElementById('container')
-    if (rows.value > 100){
-        window.alert('Max:100 rows')
-        rows.value = 100
-    } else if(columns.value>100){
-        window.alert('Max:100 Columns')
-        columns.value = 100
+    if (rows.value > 45){
+        window.alert('Max:45 rows')
+        rows.value = 45
+    } else if(columns.value>45){
+        window.alert('Max:45 Columns')
+        columns.value = 45
     } else {
     
     for (i=1; i<(rows.value*columns.value)+1; i++) {
