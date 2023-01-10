@@ -91,10 +91,11 @@ function logInput() {
             
                 }
  }else {                                                            //****************************** NUMERO DE OPERADORES MAIOR QUE ZERO ********************//
-
+        
         if (this.value == '+' || this.value == '-' || this.value == '*' || this.value == '/' || this.value =='%') {
             operator.push(this.value)                                                               // ADICIONA O SEGUNDO OPERADOR NA LISTA 
-            console.log(operator)
+            if (operator.length < 2){
+            console.log(operator)}else{return}
             displaybot.innerHTML = displaytop.innerHTML                                              // PASSA O SEGUNDO NUMERO + OPERADOR PRO DISPLAY DE BAIXO
             displaytop.innerHTML = this.value 
 
